@@ -23,4 +23,4 @@ jobs:
           registry: ghcr.io
           repository: ${{ github.repository }}/cde
           tags: ${{ join(matrix.tag, '-') }}
-          build-args: BASE=${{ join(matrix.tag, ':') }}
+          build_args: BASE=${{ join(matrix.tag, ':') }}
