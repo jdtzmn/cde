@@ -10,7 +10,7 @@ jobs:
     strategy:
       fail-fast: false
       matrix:
-        tag: [latest, node, python, [python, 3.7]]
+        tag: [node, python, [python, 3.7]]
 
     steps:
       - name: Check out the repo
