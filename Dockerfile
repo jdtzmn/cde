@@ -10,7 +10,7 @@ RUN apt-get update && \
   apt-get install software-properties-common openssh-client git --yes && \
   add-apt-repository ppa:fish-shell/release-3 && \ 
   apt-get install fish --yes
-RUN chsh -s /usr/local/bin/fish
+RUN chsh -s /usr/bin/fish
 
 # Expose ports
 EXPOSE $PORT
